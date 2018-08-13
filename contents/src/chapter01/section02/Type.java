@@ -38,7 +38,7 @@ public class Type {
         doubleFloat = Double.NaN;
         // Not a Number, NaN
 
-        if(Double.isNaN(doubleFloat));
+        if (Double.isNaN(doubleFloat)) ;
         // NaN check Method
 
         // 3. char type
@@ -57,7 +57,7 @@ public class Type {
         boolean flag;
         flag = true;
         flag = false;
-        if(flag);
+        if (flag) ;
         // boolean is not integer type in Java.
         // true is not integer 1 and false is not integer 0.
     }

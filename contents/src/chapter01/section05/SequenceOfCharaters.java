@@ -8,11 +8,11 @@ package chapter01.section05;
 
 public class SequenceOfCharaters {
 
-    public static void out(String str){
+    public static void out(String str) {
         System.out.println(str);
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         // 1.
         String location = "Java";
         String greeting = "Hello " + location;
@@ -27,7 +27,7 @@ public class SequenceOfCharaters {
 
         StringBuilder builder = new StringBuilder();
         String[] name = names.split(", ");
-        for(int i=0; i<name.length; i++) builder.append(name[i] + " ");
+        for (int i = 0; i < name.length; i++) builder.append(name[i] + " ");
         out(builder.toString());
 
         // 2.
@@ -36,17 +36,17 @@ public class SequenceOfCharaters {
         out(location);
 
         // 3.
-        if(location.equals("World")) out("true");
-        if("World".equals(location)) out("true");
+        if (location.equals("World")) out("true");
+        if ("World".equals(location)) out("true");
         // The second equals is better than the first equals
         // The second way can to avoid NullPointerException.
 
         String middleName = null;
-        if(middleName == null) out("null");
+        if (middleName == null) out("null");
 
-        if("WORLD".equalsIgnoreCase(location)) out("true");
+        if ("WORLD".equalsIgnoreCase(location)) out("true");
 
-        if(location.compareTo("world") < 0) out("front");
+        if (location.compareTo("world") < 0) out("front");
         else out("same or back");
 
         int n = 42;
@@ -70,8 +70,8 @@ public class SequenceOfCharaters {
 
         int[] codePoints = str.codePoints().toArray();
 
-        for (int i=0; i<codePoints.length; i++) {
-            System.out.print(codePoints[i]+" ");
+        for (int i = 0; i < codePoints.length; i++) {
+            System.out.print(codePoints[i] + " ");
         }
     }
 }
