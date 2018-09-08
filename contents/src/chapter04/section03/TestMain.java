@@ -7,6 +7,7 @@ package chapter04.section03;
  */
 
 public class TestMain {
+    
     public static void main(String[] args){
         Size notMySize = Size.valueOf("SMALL");
         System.out.println(notMySize);
